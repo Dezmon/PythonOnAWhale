@@ -1,8 +1,11 @@
-* Requirements file ("requirements.txt")
+* Files 
+** notebook files to be included in the contanter
+  in this case: ExampleNotebook.ipynb 
+** Contents of Requirements file ("requirements.txt")
  #+begin_src text :tangle requirements.txt
  bokeh==1.3.4                   
  #+end_src
-* Docker file ("Dockerfile")
+** Contents of Docker file ("Dockerfile")
  #+begin_src text :tangle Dockerfile
    FROM jupyter/scipy-notebook
    COPY requirements.txt requirements.txt
